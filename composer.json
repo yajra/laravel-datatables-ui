@@ -16,7 +16,8 @@
         }
     ],
     "require": {
-        "laravel/ui": "^2.0"
+        "laravel/ui": "^2.0",
+        "yajra/laravel-datatables-buttons": "^4.9"
     },
     "autoload": {
         "psr-4": {

@@ -39,6 +39,7 @@ class DataTables extends Preset
     {
         copy(__DIR__ . '/stubs/app.js', resource_path('js/app.js'));
         copy(__DIR__ . '/stubs/bootstrap.js', resource_path('js/bootstrap.js'));
+        copy(base_path('vendor/yajra/laravel-datatables-buttons/src/resources/assets/buttons.server-side.js'), resource_path('js/vendor/buttons.server-side.js'));
     }
 
     /**
