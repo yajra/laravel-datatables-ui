@@ -8,7 +8,7 @@ require('./bootstrap');
 
 require('./vendor/dataTables.default');
 require('./vendor/buttons.server-side');
-require('laravel-datatables-assets/js/dataTables.buttons');
-require('laravel-datatables-assets/js/dataTables.renderers');
-require('laravel-datatables-assets/js/dataTables.callbacks');
+// require('laravel-datatables-assets/js/dataTables.buttons');
+// require('laravel-datatables-assets/js/dataTables.renderers');
+// require('laravel-datatables-assets/js/dataTables.callbacks');
 
