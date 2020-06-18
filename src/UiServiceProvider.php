@@ -13,7 +13,7 @@ class UiServiceProvider extends ServiceProvider
             DataTables::install();
 
             $command->info('DataTables scaffolding installed successfully.');
-            $command->comment('When using Editor, you must add this script: "postinstall": "node ./node_modules/datatables.net-editor/install.js ./path-to/Editor.zip".');
+            $command->comment('When using Editor, you must add this script on package.json: "postinstall": "node ./node_modules/datatables.net-editor/install.js ./path-to/Editor.zip".');
             $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
         });
     }
