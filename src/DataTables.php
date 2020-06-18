@@ -76,6 +76,7 @@ class DataTables extends Preset
                 'datatables.net-rowreorder-bs4'   => '^1.2.5',
                 'datatables.net-scroller-bs4'     => '^1.5.1',
                 'datatables.net-select-bs4'       => '^1.2.7',
+                "@fortawesome/fontawesome-free"   => "^5.5.0",
                 'jquery'                          => '^3.2',
                 'laravel-datatables-assets'       => 'https://github.com/yajra/laravel-datatables-assets',
                 'popper.js'                       => '^1.12',
