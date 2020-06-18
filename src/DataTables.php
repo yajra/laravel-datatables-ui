@@ -55,6 +55,7 @@ class DataTables extends Preset
                 'datatables.net-bs4'              => '^1.10.19',
                 'datatables.net-buttons-bs4'      => '^1.5.4',
                 'datatables.net-colreorder-bs4'   => '^1.5.1',
+                'datatables.net-editor'           => '^1.6.5',
                 'datatables.net-editor-bs4'       => '^1.6.3',
                 'datatables.net-fixedcolumns-bs4' => '^3.2.6',
                 'datatables.net-fixedheader-bs4'  => '^3.1.5',
