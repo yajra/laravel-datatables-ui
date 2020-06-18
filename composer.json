@@ -1,0 +1,38 @@
+{
+    "name": "yajra/laravel-datatables-ui",
+    "description": "Laravel DataTables UI Preset",
+    "keywords": [
+        "yajra",
+        "laravel-datatables-ui"
+    ],
+    "homepage": "https://github.com/yajra/laravel-datatables-ui",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arjay Q. Angeles",
+            "email": "aqangeles@gmail.com",
+            "homepage": "https://yajrabox.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel/ui": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yajra\\DataTables\\Ui\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yajra\\DataTables\\Ui\\UiServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
