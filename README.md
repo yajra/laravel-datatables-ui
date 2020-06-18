@@ -25,6 +25,37 @@ php artisan ui dt
 php artisan ui dt --auth
 ```
 
+## Usage with DataTables Editor
+
+If you have license and want to use Editor, you need to setup the following:
+
+1. Enable editor library on `bootstrap.js`
+
+```js
+require('datatables.net-editor-bs4');
+```
+
+2. Use 'laravel-datatables-assets' package instead of 'buttons.server-side.js' script on `app.js`.
+
+```js
+//require('./vendor/buttons.server-side');
+require('laravel-datatables-assets/js/dataTables.buttons');
+```
+
+3. Add `postinstall` script on package,json
+
+```js
+    "scripts": {
+        "dev": "npm run development",
+        ...,
+        "postinstall": "node ./node_modules/datatables.net-editor/install.js ./Editor.zip"
+    },
+```
+
+4. Download your copy of Editor Library JS + CSS file and save as `Editor.zip`.
+5. Move `Editor.zip` to your project base directory.
+6. Run `npm install && npm run dev`  to compile changes.
+
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
