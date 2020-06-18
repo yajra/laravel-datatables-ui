@@ -35,7 +35,7 @@ If you have license and want to use Editor, you need to setup the following:
 require('datatables.net-editor-bs4');
 ```
 
-2. Use 'laravel-datatables-assets' package instead of 'buttons.server-side.js' script on `app.js`.
+2. Use `laravel-datatables-assets` package instead of `buttons.server-side.js` script on `app.js`.
 
 ```js
 //require('./vendor/buttons.server-side');
