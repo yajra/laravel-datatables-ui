@@ -64,7 +64,7 @@ To use `@dataTable` blade directive, you need to firt setup the following on you
 2. Include `app.js` on your layout.
 3. Add `@stack('scripts')` after `app.js` script include.
 
-### Example layout
+### Example layout & page
 
 **resources/views/layouts/app.php**
 
@@ -84,7 +84,9 @@ To use `@dataTable` blade directive, you need to firt setup the following on you
 </html>
 ```
 
-On your page
+Create your dataTables class. See https://yajrabox.com/docs/laravel-datatables/master/buttons-starter for details.
+
+On your view:
 
 
 ```php
