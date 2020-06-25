@@ -56,6 +56,45 @@ require('laravel-datatables-assets/js/dataTables.buttons');
 5. Move `Editor.zip` to your project base directory.
 6. Run `npm install && npm run dev`  to compile changes.
 
+## Blade Directive @dataTable
+
+To use `@dataTable` blade directive, you need to firt setup the following on your layout file.
+
+1. Include `app.css` on your layout.
+2. Include `app.js` on your layout.
+3. Add `@stack('scripts')` after `app.js` script include.
+
+### Example layout
+
+**resources/views/layouts/app.php**
+
+```php
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laravel</title>
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+</head>
+<body>
+    @yield('content')
+
+    <script src="{{ mix('js/app.js') }}"></script>
+    @stack('scripts')
+</body>
+</html>
+```
+
+On your page
+
+
+```php
+@extends('layouts.app')
+
+@section('content')
+@dataTable
+@endsection
+```
+
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
